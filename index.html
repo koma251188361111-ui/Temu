@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Гаджеты будущего</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+    body {
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #1a73e8;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+    }
+    .banner {
+      background: url('https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 40px auto;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .product-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .product-card .info {
+      padding: 15px;
+      text-align: center;
+    }
+    .product-card .info h3 {
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+    .product-card .info p {
+      margin-bottom: 15px;
+      font-size: 1rem;
+      color: #1a73e8;
+      font-weight: bold;
+    }
+    .product-card .info button {
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+    .product-card .info button:hover {
+      background-color: #155ab6;
+    }
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #1a73e8;
+      color: white;
+      margin-top: 40px;
+    }
+    @media(max-width: 600px){
+      header h1 {
+        font-size: 2rem;
+      }
+      .banner {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Гаджеты будущего</h1>
+</header>
+
+<div class="banner">
+  Открой мир инновационных товаров!
+</div>
+
+<div class="container">
+  <h2 style="margin-bottom: 20px; text-align: center;">Популярные товары</h2>
+  <div class="products">
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1593642634367-d91a135587b5?auto=format&fit=crop&w=800&q=80" alt="Умные наушники">
+      <div class="info">
+        <h3>Умные наушники</h3>
+        <p>4999₽</p>
+        <button>Купить</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1580910051070-2c8f6a35e2c1?auto=format&fit=crop&w=800&q=80" alt="Смарт-часы">
+      <div class="info">
+        <h3>Смарт-часы</h3>
+        <p>7999₽</p>
+        <button>Купить</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1565372917413-3b332e98b3b0?auto=format&fit=crop&w=800&q=80" alt="Портативная колонка">
+      <div class="info">
+        <h3>Портативная колонка</h3>
+        <p>3499₽</p>
+        <button>Купить</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1606813903413-3c25e99d97de?auto=format&fit=crop&w=800&q=80" alt="Внешний аккумулятор">
+      <div class="info">
+        <h3>Внешний аккумулятор</h3>
+        <p>1999₽</p>
+        <button>Купить</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  © 2026 Гаджеты будущего. Все права защищены.
+</footer>
+
+</body>
+</html>
